@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ozil Tour & Travels</title>
+
+<style>
+body {margin:0;font-family:Arial;}
+
+header {
+    background:#0c2461;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+.slider {
+    position:relative;
+    height:90vh;
+    overflow:hidden;
+}
+
+.slide {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    animation:slide 15s infinite;
+}
+
+.slide:nth-child(1){background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');}
+.slide:nth-child(2){background-image:url('https://images.unsplash.com/photo-1526779259212-939e64788e3c');}
+.slide:nth-child(3){background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');}
+
+@keyframes slide {
+    0%{opacity:1;}
+    33%{opacity:0;}
+    66%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.hero-text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+}
+
+.hero-text h1 {font-size:50px;}
+
+.btn {
+    background:#e58e26;
+    padding:12px 25px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.section {padding:60px 20px;text-align:center;}
+
+.packages {display:flex;flex-wrap:wrap;justify-content:center;}
+
+.card {
+    width:300px;
+    margin:15px;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    border-radius:10px;
+}
+
+.footer {
+    background:#0c2461;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Ozil Tour & Travels</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="slider">
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+
+    <div class="hero-text">
+        <h1>Travel The World With Us</h1>
+        <p>Umrah • Dubai • Kashmir</p>
+        <a href="https://wa.me/919906106038?text=I%20want%20to%20book%20a%20package" class="btn">Book Now</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Umrah Packages</h2>
+    <div class="packages">
+        <div class="card">
+            <h3>Economy Umrah</h3>
+            <p>₹85,000</p>
+        </div>
+        <div class="card">
+            <h3>VIP Umrah</h3>
+            <p>₹1,25,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Tour Packages</h2>
+    <div class="packages">
+        <div class="card">
+            <h3>Dubai Tour</h3>
+            <p>₹45,000</p>
+        </div>
+        <div class="card">
+            <h3>Kashmir Tour</h3>
+            <p>₹15,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Why Choose Us</h2>
+    <p>✔ Trusted Agency</p>
+    <p>✔ Best Prices</p>
+    <p>✔ Full Support</p>
+</div>
+
+<div class="section">
+    <h2>Contact</h2>
+    <p>📞 +91 9906106038</p>
+    <p>📍 Srinagar, Kashmir</p>
+</div>
+
+<div class="footer">
+    <p>© 2026 Ozil Tour & Travels</p>
+</div>
+
+<a class="whatsapp" href="https://wa.me/919906106038">W</a>
+
+</body>
+</html>
